@@ -3,7 +3,7 @@ description: Pure Dart serializable component serialization registry and mixins.
 version: 1.0.0
 
 environment:
-  sdk: ^3.9.2
+  sdk: ^3.12.1
 
 dependencies:
   meta: ^1.11.0
