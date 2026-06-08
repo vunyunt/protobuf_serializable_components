@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:protobuf/protobuf.dart';
 import 'proto_serializable.dart';
 import 'serializable_component_registry.dart';
+import 'proto_component_meta.dart';
 
 typedef SerializableComponentFactory =
     FutureOr<ProtoSerializable> Function(
@@ -12,7 +13,7 @@ typedef SerializableComponentFactory =
 class ComponentDescriptor {
   final GeneratedMessage defaultInstance;
   final SerializableComponentFactory factory;
-  final dynamic meta; // Generic metadata support
+  final ProtoComponentMeta? meta; // Generic metadata support
 
   ComponentDescriptor({
     required this.defaultInstance,
